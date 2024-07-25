@@ -1,28 +1,16 @@
-const setPilot = (newPilot: string, spaceship: { name?: string; pilot: string; speed?: number; inMission?: boolean; }) => {
-    spaceship.pilot = newPilot;
-  }
-  
-  const accelerate = (targetSpeed: number, spaceship: { name?: string; pilot?: string; speed: any; inMission?: boolean; }) => {
-    spaceship.speed = targetSpeed;
-  }
-  
-  const sendToMission = (spaceship: { name?: string; pilot?: string; speed?: number; inMission: any; }) => {
-    spaceship.inMission = true;
-  }
-  
-  const spaceship = {
-    name: '',
-    pilot: '',
-    speed: 0,
-    inMission: false,
-  }
-  
-  const pilot = "Han Solo";
-  
-  spaceship.name = "Millennium Falcon";
-  
-  setPilot(pilot, spaceship);
-  accelerate(50, spaceship);
-  sendToMission(spaceship);
-  
-  console.log(spaceship);
+// This is not an exemple of tupla
+
+const crew = String[];
+
+crew.push('Gabriel')
+
+//Below we have a tupla, in summary a very specific array
+
+let crew1 = [String, String, String]
+
+crew[0] = 'Zebra';
+crew[1] = 'Lion';
+crew[2] = false;
+
+let point = [Number, Number];
+
